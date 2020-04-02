@@ -55,4 +55,11 @@ class Stack{
             top--; 
           
         }
+        public int peek(int p){
+            if(top==-1){
+                System.out.println("Stack is empty element cannot be peeked");
+                return -1;
+            }
+            return st[top-p+1];
+        }
     }
